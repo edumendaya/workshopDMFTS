@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PREFIX="3pop.N2S" # Change the prefix according to the .tpl .est and .obs files
+PREFIX="modW2E" # Change the prefix according to the .tpl .est and .obs files
 
 for i in {1..3}
  do
