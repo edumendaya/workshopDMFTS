@@ -1,0 +1,27 @@
+#example blueprint file
+#input setting
+popid: NOR # id of the population (no white space)
+nseq: 96 # number of sequences
+L: 24810880 # total number of observed nucleic sites, including polymorphic and monomorphic
+whether_folded: true # whethr the SFS is folded (true or false)
+SFS: 	911.6461996285257 178.6399335448456 132.7603211206867 98.86601874339635 78.8398049209864 66.21939940910126 57.6506453646037 50.79344878145095 44.47824373649497 38.63324650039523 33.55617884998624 29.28849439827904 25.58768262099869 22.15071877294564 18.82299555248472 15.71574323242247 13.11241901209466 11.22844386916217 10.05291702174522 9.38547988858455 8.987527348597734 8.705842491772355 8.497330369791243 8.380964820629416 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 # snp frequency spectrum: number of singleton, number of doubleton, etc. (separated by white space)
+smallest_size_of_SFS_bin_used_for_estimation: 2 # default is 1; to ignore singletons, uncomment this line and change this number to 2
+#largest_size_of_SFS_bin_used_for_estimation: 15 # default is nseq/2 for folded SFS
+pct_training: 0.67 # percentage of sites for training
+nrand: 24	47	71	94 # number of random break points for each try (separated by white space)
+project_dir: NOR_fold_r4 # project directory
+stairway_plot_dir: stairway_plot_es # directory to the stairway plot files
+ninput: 20 # number of input files to be created for each estimation
+theta_upper_bound: 0.2 # the maximum of theta used in the search algorithm, default is 0.2. Increase this value only if seeing confident intervals converged to the same value as a plateau on the plot.
+dimension_factor: 2000 # this parameter determin the maximum number of iteration of the search algorithm, default is 2000.
+#random_seed: 6
+#output setting
+mu: 2.7e-8 # assumed mutation rate per site per generation
+year_per_generation: 30 # assumed generation time (in years)
+#plot setting
+plot_title: NOR_fold_r4 # title of the plot
+xrange: 0.1,10000 # Time (1k year) range; format: xmin,xmax; "0,0" for default
+yrange: 0,0 # Ne (1k individual) range; format: xmin,xmax; "0,0" for default
+xspacing: 2 # X axis spacing
+yspacing: 2 # Y axis spacing
+fontsize: 12 # Font size
