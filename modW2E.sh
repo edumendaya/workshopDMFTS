@@ -2,7 +2,7 @@
 
 PREFIX="modW2E" # Change the prefix according to the .tpl .est and .obs files
 
-for i in {1..3}
+for i in {2..4}
  do
    mkdir run$i
    cp ${PREFIX}.tpl ${PREFIX}.est ${PREFIX}_MSFS.obs fsc28 run$i"/"
