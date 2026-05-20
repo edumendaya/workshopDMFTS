@@ -1,0 +1,23 @@
+// Priors and rules file: model West to East migration
+[PARAMETERS]
+//#isInt? #name   #dist.#min  #max 
+//all Ns are in number of haploid individuals
+1   WES          unif     100       5000  output 
+1   CEN          unif     100       5000  output
+1   EST          unif     100       5000  output
+1   FIR$         unif     100     200000  output bounded
+1   SEC$         unif     100     200000  output bounded
+1   THR$         unif     100     200000  output bounded
+1   FOH$         unif     100     200000  output bounded
+1   HOL1$        unif      10        275  output bounded
+1   HOL2$        unif      10        275  output bounded
+1   HOL3$        unif      10        275  output bounded
+1   SPL1$        unif     278       3050  output bounded
+1   SPL2$        unif    3051       7550  output bounded
+1   WIS          unif    3051       7550  output bounded
+[RULES]
+[COMPLEX PARAMETERS]
+0 PRM$ =  FIR$ / WES  hide
+0 SGN$ =  SEC$ / CEN  hide
+0 TRC$ =  THR$ / EST  hide
+0 ANC$ =  FOH$ / PRM$ hide
