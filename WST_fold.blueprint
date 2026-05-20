@@ -11,7 +11,7 @@ pct_training: 0.67 # percentage of sites for training
 nrand: 24	47	71	94 # number of random break points for each try (separated by white space)
 project_dir: WEST_fold_v2 # project directory
 stairway_plot_dir: stairway_plot_es # directory to the stairway plot files
-ninput: 20 # number of input files to be created for each estimation
+ninput: 10 # number of input files to be created for each estimation
 theta_upper_bound: 0.2 # the maximum of theta used in the search algorithm, default is 0.2. Increase this value only if seeing confident intervals converged to the same value as a plateau on the plot.
 dimension_factor: 2000 # this parameter determin the maximum number of iteration of the search algorithm, default is 2000.
 #random_seed: 6
