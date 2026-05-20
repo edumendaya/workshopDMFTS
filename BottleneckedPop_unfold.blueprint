@@ -9,7 +9,7 @@ smallest_size_of_SFS_bin_used_for_estimation: 2 # default is 1; to ignore single
 #largest_size_of_SFS_bin_used_for_estimation: 29 # default is n-1; to ignore singletons, uncomment this line and change this number to nseq-2
 pct_training: 0.67 # percentage of sites for training
 nrand: 10	19	29	38 # number of random break points for each try (separated by white space)
-project_dir: bottleneckedPop_unfold # project directory
+project_dir: BottleneckedPop_unfold # project directory
 stairway_plot_dir: stairway_plot_es # directory to the stairway plot files
 ninput: 10 # number of input files to be created for each estimation
 theta_upper_bound: 0.2 # the maximum of theta used in the search algorithm, default is 0.2. Increase this value only if seeing confident intervals converged to the same value as a plateau on the plot.
