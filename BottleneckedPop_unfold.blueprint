@@ -1,6 +1,6 @@
 #example blueprint file
 #input setting
-popid: CENunf_noLD # id of the population (no white space)
+popid: popBot # id of the population (no white space)
 nseq: 40 # number of sequences
 L: 20000000 # total number of observed nucleic sites, including polymorphic and monomorphic
 whether_folded: false # whethr the SFS is folded (true or false)
