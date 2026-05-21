@@ -1,5 +1,7 @@
 #!/bin/bash
 
+PREFIX="three_pop"
+
 # Get all lines with genomic data
 zgrep -v "^#" $PREFIX.vcf > $PREFIX.allSites
 
@@ -7,7 +9,7 @@ zgrep -v "^#" $PREFIX.vcf > $PREFIX.allSites
 zgrep "^#" $PREFIX.vcf > header
 
 # get 100 files with 4338 sites each (number 101 removed due to only 90 sites)
-split -l 4338 $PREFIX.allSites $PREFIX.sites.
+split -l 2560 $PREFIX.allSites $PREFIX.sites.
 
 # Generate 50 files each with randomly concatenated blocks and compute the SFS for each:
 for i in {1..50}
@@ -27,10 +29,10 @@ do
   gzip ${PREFIX}.bs.$i.vcf
 
   # Make an SFS from the new bootstrapped file
-  easySFS.py -i ${PREFIX}.bs.$i.vcf.gz -p pop_file -a -f --proj 8,8
+  ./easySFS.py -i ${PREFIX}.bs.$i.vcf.gz -p pop_file.txt -a -f --proj 47,48,45
 
   # Copy the observed SFS file into this folder renaming it to match the .tpl prefix
-  cp ../${PREFIX}_jointDAFpop1_0.obs  ${PREFIX}.bs.${i}_jointDAFpop1_0.obs
+  ln -s ../${PREFIX}_MSFS.obs  ${PREFIX}.bs.${i}_MSFS.obs
 
   # Say that it is finished with iteration $i
   echo bs$i" ready"
@@ -38,4 +40,4 @@ do
   cd ..
 done
 
-# Script from Mark Ravinet & Joana Meier (2021) https://speciationgenomics.github.io/fastsimcoal2
+# Modified from Mark Ravinet & Joana Meier (2021) https://speciationgenomics.github.io/fastsimcoal2
