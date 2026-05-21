@@ -3,7 +3,7 @@
 wget https://github.com/edumendaya/workshopDMFTS/raw/refs/heads/main/modE2W.tpl
 wget https://github.com/edumendaya/workshopDMFTS/raw/refs/heads/main/modE2W.est
 wget https://github.com/edumendaya/workshopDMFTS/raw/refs/heads/main/modE2W.sh
-ln -s ../fsc28-mac
+ln -s ../fsc28
 ln -s ../../sfs/3pop_fold/fastsimcoal2/three_pop_MSFS.obs modE2W_MSFS.obs
 chmod +x modE2W.sh
 
