@@ -11,3 +11,5 @@ for i in {1..3}
    rm -r ${PREFIX}_MSFS.obs
    cd ..
  done
+
+# Modified from Mark Ravinet & Joana Meier (2021) https://speciationgenomics.github.io/fastsimcoal2
