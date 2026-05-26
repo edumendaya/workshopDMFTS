@@ -1,0 +1,27 @@
+#example blueprint file
+#input setting
+popid: popA # id of the population (no white space)
+nseq: 40 # number of sequences
+L: 20000000 # total number of observed nucleic sites, including polymorphic and monomorphic
+whether_folded: false # whethr the SFS is folded (true or false)
+SFS: 39624.4141025641 6269.360256410361 2378.864102564094 1519.912820512808 1168.685897435909 1041.851282051257 950.6448717948756 938.3641025641135 881.2871794871785 834.2307692307745 827.7692307692201 818.4461538461584 801.3858974358955 776.6166666666705 747.7820512820508 731.251282051277 707.112820512821 668.0128205128211 637.6743589743586 654.4743589743564 649.1974358974351 607.2743589743592 580.4128205128196 559.8205128205112 510.7692307692309 495.4346153846159 518.3961538461542 515.1512820512844 501.2551282051232 451.2820512820528 457.6961538461543 473.5538461538506 461.8461538461565 477.8653846153736 409.211538461542 417.107692307689 414.3410256410238 406.4410256410326 3853.802564102564 # snp frequency spectrum: number of singleton, number of doubleton, etc. (separated by white space)
+smallest_size_of_SFS_bin_used_for_estimation: 2 # default is 1; to ignore singletons, uncomment this line and change this number to 2
+#largest_size_of_SFS_bin_used_for_estimation: 29 # default is n-1; to ignore singletons, uncomment this line and change this number to nseq-2
+pct_training: 0.67 # percentage of sites for training
+nrand: 10	19	29	38 # number of random break points for each try (separated by white space)
+project_dir: BottleneckedPop_unfold_v3_r2 # project directory
+stairway_plot_dir: stairway_plot_es # directory to the stairway plot files
+ninput: 10 # number of input files to be created for each estimation
+theta_upper_bound: 0.2 # the maximum of theta used in the search algorithm, default is 0.2. Increase this value only if seeing confident intervals converged to the same value as a plateau on the plot.
+dimension_factor: 2000 # this parameter determin the maximum number of iteration of the search algorithm, default is 2000.
+#random_seed: 6
+#output setting
+mu: 1.25e-8 # assumed mutation rate per site per generation
+year_per_generation: 15 # assumed generation time (in years)
+#plot setting
+plot_title: BottleneckedPop_unfold_v3_r2 # title of the plot
+xrange: 0.1,10000 # Time (1k year) range; format: xmin,xmax; "0,0" for default
+yrange: 0,0 # Ne (1k individual) range; format: xmin,xmax; "0,0" for default
+xspacing: 2 # X axis spacing
+yspacing: 2 # Y axis spacing
+fontsize: 12 # Font size
