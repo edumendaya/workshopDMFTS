@@ -4,7 +4,7 @@ popid: WEST # id of the population (no white space)
 nseq: 96 # number of sequences
 L: 24810880 # total number of observed nucleic sites, including polymorphic and monomorphic
 whether_folded: true # whethr the SFS is folded (true or false)
-SFS: 	907.6228278968455 182.4989316049093 135.4910968280949 101.3942961805915 79.72364550579172 65.5398328781921 55.7997299217854 48.95343348103319 43.61056245327568 38.59579129428273 33.67538711564659 29.12156546080308 25.12758578803274 21.62292433334 18.44247950733553 15.57939994092143 13.20277928023495 11.45894912958185 10.3162558131901 9.594263855427389 9.100652595050516 8.7306623513558 8.467589909785943 8.329356874472399 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 # snp frequency spectrum: number of singleton, number of doubleton, etc. (separated by white space)
+SFS: 	180.2726566000441 135.466890602568 100.2679998015097 79.66173182859602 66.36826915868625 57.27497988785186 50.379577626939 44.27341097322472 38.46330729737799 33.26428686179872 28.98592984258857 25.50406788953562 22.411759526922 19.36235210865382 16.33664082567985 13.62635628715861 11.55294501738835 10.19881201590933 9.381433299656525 8.834669956274574 8.391105851248451 8.023956737090314 7.776896112610364 3.845082074367808 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 # snp frequency spectrum: number of singleton, number of doubleton, etc. (separated by white space)
 smallest_size_of_SFS_bin_used_for_estimation: 2 # default is 1; to ignore singletons, uncomment this line and change this number to 2
 #largest_size_of_SFS_bin_used_for_estimation: 15 # default is nseq/2 for folded SFS
 pct_training: 0.67 # percentage of sites for training
@@ -19,7 +19,7 @@ dimension_factor: 2000 # this parameter determin the maximum number of iteration
 mu: 1.25e-8 # assumed mutation rate per site per generation
 year_per_generation: 40 # assumed generation time (in years)
 #plot setting
-plot_title: WEST_fold_v2 # title of the plot
+plot_title: WEST_fold # title of the plot
 xrange: 0.1,10000 # Time (1k year) range; format: xmin,xmax; "0,0" for default
 yrange: 0,0 # Ne (1k individual) range; format: xmin,xmax; "0,0" for default
 xspacing: 2 # X axis spacing
