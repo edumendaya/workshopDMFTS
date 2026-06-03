@@ -12,7 +12,7 @@
 1   HOL1$        unif      10        275  output bounded
 1   HOL2$        unif      10        275  output bounded
 1   HOL3$        unif      10        275  output bounded
-1   SPL1$        unif     278       3050  output bounded
+1   SPL1$        unif     276       3050  output bounded
 1   SPL2$        unif    3051       7550  output bounded
 1   WIS          unif    3051       7550  output bounded
 [RULES]
