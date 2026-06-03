@@ -6,7 +6,7 @@ L: 20000000 # total number of observed nucleic sites, including polymorphic and 
 whether_folded: false # whethr the SFS is folded (true or false)
 SFS: 43018.27948717948 3401.69487179493 2757.648717948706 2417.569230769214 2313.865384615408 2160.430769230718 2141.055128205137 2000.420512820535 1884.920512820512 1805.794871794882 1754.779487179467 1650.19487179488 1652.429487179485 1623.891025641031 1550.564102564102 1513.584615384607 1502.588461538461 1490.734615384617 1495.656410256409 757.897435897433 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 # snp frequency spectrum: number of singleton, number of doubleton, etc. (separated by white space)
 smallest_size_of_SFS_bin_used_for_estimation: 2 # default is 1; to ignore singletons, uncomment this line and change this number to 2
-largest_size_of_SFS_bin_used_for_estimation: 39 # default is n-1; to ignore singletons, uncomment this line and change this number to nseq-2
+#largest_size_of_SFS_bin_used_for_estimation: 39 # default is n-1; to ignore singletons, uncomment this line and change this number to nseq-2
 pct_training: 0.67 # percentage of sites for training
 nrand: 10	19	29	38 # number of random break points for each try (separated by white space)
 project_dir: CollapsingPop_unfold # project directory
